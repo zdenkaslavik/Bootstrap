@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Bootstrap & jQuery Example with Cowboy Boot</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="p-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left side: Content -->
+      <div class="col-md-8 text-center text-md-start">
+        <h1 class="mb-4">Welcome!</h1>
+        <button id="greetBtn" class="btn btn-primary mb-3">Click me to greet</button>
+        <div id="message" class="alert alert-success d-none"></div>
+      </div>
+      <!-- Right side: Cowboy boot image -->
+      <div class="col-md-4 text-center">
+        <img src="images/boot.jpg" alt="Cowboy Boot" style="max-width: 150px;" />
+
+      </div>
+    </div>
+  </div>
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#greetBtn').click(function() {
+        $('#message').text('Howdy, partner! You clicked the button.').removeClass('d-none');
+      });
+    });
+  </script>
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
